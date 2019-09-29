@@ -1,0 +1,27 @@
+{
+    "homepage": "https://dvisvgm.de/",
+    "version": "2.7.4",
+    "license": "GPL-2.0-or-later",
+    "description": "A fast DVI, EPS, and PDF to SVG converter.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mgieseki/dvisvgm/releases/download/2.7.4/dvisvgm-2.7.4-win64.zip",
+            "hash": "1c8a52701a656bebb157acd1d6e39d71cdd87fc199f728d2d8618236eb172308",
+            "extract_dir": "dvisvgm-2.7.4-win64"
+        }
+    },
+    "bin": [
+        "dvisvgm.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/mgieseki/dvisvgm"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mgieseki/dvisvgm/releases/download/$version/dvisvgm-2.7.4-win64.zip",
+                "extract_dir": "dvisvgm-$version-win64"
+            }
+        }
+    }
+}
